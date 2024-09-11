@@ -6,14 +6,14 @@ import Image from 'next/image';
 // import Lottie from "lottie-react";
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 
-import { DM_Sans } from 'next/font/google';
+// import { DM_Sans } from 'next/font/google';
 import ReactAudioPlayer from 'react-audio-player';
 
 // If loading a variable font, you don't need to specify the font weight
-const dm_sans = DM_Sans({
-  subsets: ['latin'],
-  display: 'swap',
-});
+const dm_sans = {
+  fontFamily: 'Arial, sans-serif',
+}
+
 
 export default function Chat() {
   const [isLoading, setLoading] = useState(false);
